@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="node_modules/sal.js/dist/sal.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Portfolio</title>
 </head>
@@ -21,19 +22,19 @@
                 <ul class="right hide-on-med-and-down">
                     <li><a href="#home">HOME</a></li>
                     <li><a href="#about">ABOUT ME</a></li>  
-                    <li><a href="#">MY WORK</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                </ul>
-                <ul class="sidenav" id="nav-mobile">
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#about">ABOUT ME</a></li> 
-                    <li><a href="#">PROJECTS</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#work">MY WORK</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
                 <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             </div>
         </nav>
     </div>
+    <ul class="sidenav" id="nav-mobile">
+            <li><a href="#home"><i class="material-icons">home</i>HOME</a></li>
+            <li><a href="#about"><i class="material-icons">person</i>ABOUT ME</a></li> 
+            <li><a href="#work"><i class="material-icons">developer_mode</i>MY WORK</a></li>
+            <li><a href="#contact"><i class="material-icons">call</i>CONTACT</a></li>
+    </ul>
     
     
     <!-- HOME -->
@@ -98,69 +99,156 @@
         </div>
     </div>
     <!-- Projects -->
-    <div class="row">
+    <div class="row" id="work">
         <!-- Skill Bars -->
-        <div class="container col s12 m6">
-            <div id="skills">
+        <div class="work">
+            <div class="container col s12 m6">
+                <div id="skills"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="350"
+                    data-aos-easing="ease-out"
+                >
                 <h4 class="center">MY SKILLS</h4>
                 <div class="container" id="skill">
                     <div class="skillbar" data-percent="80%">
                         <div class="skillbar-title" style="background:#00bcd4 "><span>C</span></div>
-                        <div class="skillbar-bar" style="background:#00bcd4 "></div>
+                        <div class="skillbar-bar" style="background:#00bcd4;width:80% "></div>
                         <div class="skillbar-bar-percent" style="color:#00bcd4 ">80%</div>
                     </div>
                     <div class="skillbar" data-percent="75%">
                         <div class="skillbar-title" style="background:#cddc39 "><span>C++</span></div>
-                        <div class="skillbar-bar" style="background:#cddc39 "></div>
+                        <div class="skillbar-bar" style="background:#cddc39; width:75%"></div>
                         <div class="skillbar-bar-percent" style="color:#cddc39 ">75%</div>
                     </div>
                     <div class="skillbar" data-percent="65%">
                         <div class="skillbar-title" style="background:#ef6c00  "><span>PHP</span></div>
-                        <div class="skillbar-bar" style="background:#ef6c00  "></div>
+                        <div class="skillbar-bar" style="background:#ef6c00; width:65%  "></div>
                         <div class="skillbar-bar-percent" style="color:#ef6c00  ">65%</div>
                     </div>
                     <div class="skillbar" data-percent="85%">
                         <div class="skillbar-title" style="background:#311b92 "><span>HTML & CSS</span></div>
-                        <div class="skillbar-bar" style="background:#311b92 "></div>
+                        <div class="skillbar-bar" style="background:#311b92; width:85%"></div>
                         <div class="skillbar-bar-percent" style="color:#311b92 ">85%</div>
                     </div>
                     <div class="skillbar" data-percent="40%">
                         <div class="skillbar-title" style="background:#880e4f "><span>JAVASCRIPT</span></div>
-                        <div class="skillbar-bar" style="background:#880e4f "></div>
-                        <div class="skillbar-bar-percent" style="color:#880e4f ">40%</div>
+                        <div class="skillbar-bar" style="background:#880e4f; width:45%"></div>
+                        <div class="skillbar-bar-percent" style="color:#880e4f ">45%</div>
                     </div>
                     <div class="skillbar" data-percent="35%">
                         <div class="skillbar-title" style="background:#388e3c "><span>JAVA</span></div>
-                        <div class="skillbar-bar" style="background:#388e3c "></div>
+                        <div class="skillbar-bar" style="background:#388e3c; width:35%"></div>
                         <div class="skillbar-bar-percent" style="color:#388e3c ">35%</div>
                     </div>
                 </div>
-                
             </div>
         </div>
-        <div class="container col s2 m6">
+        <div class="container col s12 m6">
+            <div class="projects"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="550"
+                data-aos-easing="ease-out"
+            >
+            <h4 class="center">PROJECTS</h4>
+            <div class="col s12 m6"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="550"
+                data-aos-easing="ease-out"
+            >
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/4.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Patient Interaction System <i class="material-icons right">more_vert</i></span>
+                    </div>
+                    
+                    <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Patient Interaction System<i class="material-icons right">close</i></span>
+                        <p>A web application build with PHP and MYSQL that enables patients and doctors communicate, fix appointments, prescribe medicine through online with voice chatting options and Payment Gateway. </p> 
+                    </div>
+                </div>
+                </div>
+                <div class="col s12 m6"
+                    data-aos="fade-up"
+                    data-aos-duration="900"
+                    data-aos-delay="750"
+                    data-aos-easing="ease-out"
+                >
+                <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="img/sih.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4"> <br> Smart India Hackathon <br> 2018 <i class="material-icons right">more_vert</i></span>
+                        </div>
+                        
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Smart India Hackathon 2018 <i class="material-icons right">close</i></span>
+                            <p>Used Google Map API with Javascript and PHP to display the location of tribes in India along with Admin panel to upload location information from WordPress.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
                 
         </div>
-    </div>
+    </div>   
+    <!-- Contact -->
+    
+        <footer class="page-footer blue darken-3" id="contact">
+            <div class="row">
+                <div class="container col s12 m6 center">
+                    <h4 class="white-text">krishna291098 @gmail.com</h4>
+                    <h5>+91 8940711678</h5>
+                    <p class="white-text text-lighten-4">E-mail to contact me!...</p>
+                    <div id="map"></div>
+                </div>
+                <div class="container col s12 m6 center">
+                    <h5 class="white-text">Follow me !</h5>
+                    <ul class="center">
+                        <li><a class="white-text text-lighten-3 waves-effect waves-circle" href="https://twitter.com/krishna291098" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a></li>
+                        <!-- <li><a class="white-text text-lighten-3 waves-effect waves-circle" href="#!"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a></li> -->
+                        <li><a class="white-text text-lighten-3 waves-effect waves-circle" href="https://www.quora.com/profile/Krishna-Kumar-S-36" target="_blank"><i class="fa fa-quora fa-2x" aria-hidden="true"></i></a></li>
+                        <li><a class="white-text text-lighten-3 waves-effect waves-circle" href="https://www.linkedin.com/in/krishnakumarskr/"target="_blank" ><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    <p class="center white-text">© 2018 Copyright <br>
+                    Designed by <a class="blue-text text-lighten-3" href="https://krishnakumarskr.github.io/">S KRISHNA KUMAR</a></p> </p>
+                </div>
+            </div>
+        </footer>
+    
     
 
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-
-   
-    <script src="js/materialize.js"></script>
-
-    <script src="node_modules/sal.js/dist/sal.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/materialize.js"></script>
-    
-    
     <script>
         AOS.init({
             once: true
         });
-
     </script>
+    <!-- <script>
+        var map;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: -34.397, lng: 150.644},
+            zoom: 8
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB663jVW-OFlVtul6CadJmbRnAZETk7V4Y&callback=initMap"
+          async defer></script> -->
+   
+    <script src="js/materialize.js"></script>
     <script src="js/main.js"></script>
+
         
 
 

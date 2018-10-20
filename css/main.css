@@ -120,7 +120,7 @@ ul.right {
 
 .skillbar-bar {
     height:5px;
-    width:0px;
+    width:100%;
     background:#6adcfa;
     border-radius:3px;
     -moz-border-radius:3px;
@@ -139,11 +139,18 @@ ul.right {
     color:rgba(0, 0, 0, 0.4);
 }
 
-#skills {
-    box-sizing: border-box;
-}
+
 
 #skills h4{
     margin-bottom: 3rem;
 }
 
+#work {
+    padding-top: 50px;
+}
+/* Map */
+/* #map {
+    
+    height: 270px;
+   
+} */
