@@ -7,12 +7,13 @@
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 //Scroll
-$(document).on('click', 'a[href^="#"]', function (event) {
+/*$(document).on('click', 'a[href^="#"]', function (event) {
   event.preventDefault();
 
   $('html, body').animate({
       scrollTop: $($.attr(this, 'href')).offset().top
   }, 500);
+<<<<<<< HEAD
 });
 
 
@@ -31,3 +32,6 @@ jQuery(window).on('scroll', function() {
   }
 });
 
+=======
+});*?
+>>>>>>> 064f938bf5e806902e0f30491af88cc5d64fb216
